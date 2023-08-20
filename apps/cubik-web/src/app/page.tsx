@@ -6,7 +6,8 @@ import LandingPage from "@/app/components/landing-page/landingPage";
 // import NodeWallet from "@coral-xyz/anchor/dist/cjs/nodewallet";
 // import { useAnchorWallet } from "@solana/wallet-adapter-react";
 
-export default function Home() {
+export default  function Home() {
+  
   return (
     <>
       {/* <Button

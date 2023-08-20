@@ -23,7 +23,9 @@
     "packages/*"
   ],
   "dependencies": {
-    "dotenv-cli": "latest"
+    "cubik-ui": "workspace:^0.1.0",
+    "dotenv-cli": "latest",
+    "next-axiom": "1.0.0-rc.1"
   },
   "devDependencies": {
     "@turbo/gen": "^1.9.7",

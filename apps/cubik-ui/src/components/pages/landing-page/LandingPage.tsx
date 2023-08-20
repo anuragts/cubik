@@ -5,6 +5,8 @@ import { useWalletModal } from '@solana/wallet-adapter-react-ui';
 import { motion } from 'framer-motion';
 import Image from 'next/legacy/image';
 import Link from 'next/link';
+import { Logger } from 'next-axiom';
+
 
 import {
   MouseParallaxChild,
@@ -61,6 +63,7 @@ const BackgroundImageWrapper = ({
 const LandingPage = () => {
   const { setVisible } = useWalletModal();
   const wallet = useWallet();
+
   return (
     <Container background="black" maxW="full" px="0">
       <MouseParallaxContainer globalFactorX={0.1} globalFactorY={0.1}>

@@ -7,6 +7,7 @@ import { AuthProvider } from "./context/user";
 import { useState } from "react";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { Providers } from "./provider";
+import { AxiomWebVitals } from "next-axiom";
 
 const PlusJakartaSans = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -27,6 +28,7 @@ export default function RootLayout({
             <AuthProvider>
               <Providers>
                 <Header />
+                <AxiomWebVitals/>
                 {children}
               </Providers>
             </AuthProvider>

@@ -3,6 +3,8 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import React from 'react';
 import ProfileHeader from '~/components/pages/user-profile/ProfileHeader';
+import { AxiomWebVitals } from 'next-axiom';
+
 interface Props {
   profilePicture?: string | undefined;
   mainWallet?: string | undefined;
@@ -62,6 +64,7 @@ export const UserPageLayout = (props: Props) => {
             <Link href={'/' + router.query.username + '/contributor'}>Contributor</Link>
           </Box>
         </HStack>
+        <AxiomWebVitals />
         {props.children}
       </Container>
     </>

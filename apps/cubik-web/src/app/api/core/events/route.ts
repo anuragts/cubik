@@ -1,6 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
 import { prisma } from "@cubik/database";
-export async function GET(request: NextRequest) {
+import { AxiomRequest, withAxiom } from "next-axiom";
+
+export const GET = withAxiom(async (request: AxiomRequest) => {
   try {
     const hackathonPromise = prisma.hackathon.findMany({
       where: {
@@ -61,4 +63,4 @@ export async function GET(request: NextRequest) {
 
     return NextResponse.json({ data: null, error: error });
   }
-}
+});

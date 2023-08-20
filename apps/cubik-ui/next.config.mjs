@@ -1,9 +1,10 @@
 await import('./src/env.mjs');
 import { PrismaPlugin } from '@prisma/nextjs-monorepo-workaround-plugin';
+import { withAxiom } from 'next-axiom';
 
 /** @type {import('next').NextConfig} */
 
-const nextConfig = {
+const nextConfig = withAxiom({
   reactStrictMode: true,
   swcMinify: true,
   webpack: (config, { isServer }) => {
@@ -24,6 +25,6 @@ const nextConfig = {
       'res.cloudinary.com',
     ],
   },
-};
+});
 
 export default nextConfig;
