@@ -23,6 +23,8 @@
     "packages/*"
   ],
   "dependencies": {
+    "@vercel/og": "^0.5.7",
+    "cubik-web": "workspace:^0.1.0",
     "dotenv-cli": "latest"
   },
   "devDependencies": {
