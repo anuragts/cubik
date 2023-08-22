@@ -132,7 +132,7 @@ export async function generateMetadata(
     title: projects?.name,
     description:projects?.shortDescription,
     openGraph:{
-      images:[`${projects?.ogImage}`, ]
+      images:[`${projects?.ogImage}`, ...previousImages ]
     }
   };
 }
